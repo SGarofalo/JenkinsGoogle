@@ -12,3 +12,7 @@ Feature: Navegar en amazon
 
  Scenario: Abrir navegador
  Given The user navigates to www.google.com
+
+@Navego
+ Scenario: Abrir youtube en el navegador
+ Given The user navigates to www.youtube.com

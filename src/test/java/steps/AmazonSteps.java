@@ -11,4 +11,9 @@ public class AmazonSteps {
     public void navegoAAmazon(){
         landingpage.navigateToGoogle();
     }
+
+    @Given("^The user navigates to www.youtube.com$")
+    public void navegoAYouTube(){
+        landingpage.navigateToYoutube();
+    }
 }
