@@ -5,11 +5,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
-  
+        uses: actions/checkout@v2  # Usa la última versión estable
+
+      - name: Install Dependencies
+        run: npm install  # Esto generará el package-lock.json
+
       - name: Cypress run
-        uses: cypress-io/github-action@v2.2.7
+        uses: cypress-io/github-action@v5  # Usa una versión compatible con Node.js 16 o superior
         with:
-          start: npm start
-
-
+          start: npm start  # Asegúrate de que tu aplicación pueda ejecutarse con este comando
